@@ -37,9 +37,13 @@ def bf_menu():
                  """)
     time.sleep(3)
     menu()
-    
+def clear():
+    if os.name == "nt":
+        os.system('cls')
+    else:
+        os.system('clear') 
 def menu():
-    os.system('cls')
+    clear()
     print ('\n\n######################################\n\n     > Opções para ferramentas <     \n\n######################################')
     print ('\n(1) Ferramentas de texto\n(2) Ferramentas de cálculos\n\n[Ainda não terminados: ]\n(3) Conversão de unidades\n(4) Ferramentas de cores\n(5) Ferramentas de randomização')
     opcao_menu = input('\n> ')
@@ -49,7 +53,7 @@ def menu():
         opc_text_tools = input('\n> ')
         # Contador de caracteres
         if opc_text_tools == '1':
-            os.system('cls')
+            clear()
             print('\n\nEscreva seu texto:')
             text = input('\n> ')
             text1 = text.replace(' ', '')
@@ -58,7 +62,7 @@ def menu():
             menu()
         # Repetir textos
         elif opc_text_tools == '2':
-            os.system('cls')
+            clear()
             print('\nEscreva seu texto:')
             text = input('\n> ')
             print('\nQuantas repetições?')
@@ -77,7 +81,7 @@ def menu():
                 menu()
         # Conversão de caixa de texto
         elif opc_text_tools == '3':
-            os.system('cls')
+            clear()
             print('\nEscreva seu texto:')
             text = input('\n> ')
             print('\nEm maiúsculo ou minúsculo?\n\n(1) Maiúsculo\n(2) Minúsculo')
@@ -94,7 +98,7 @@ def menu():
                 menu()
         # Inverter texto
         elif opc_text_tools == '4':
-            os.system('cls')
+            clear()
             print('\nEscreva seu texto:')
             text = input('\n> ')
             print()
@@ -107,7 +111,7 @@ def menu():
         opc_calc_tools = input('\n> ')
         # Porcentagem
         if opc_calc_tools == '1':
-            os.system('cls')
+            clear()
             print('\nPorcentagem (%)')
             porcentagem = input('\n> ')
             print('\nde qual número?')
@@ -131,7 +135,7 @@ def menu():
             menu()
         # Média
         elif opc_calc_tools == '2':
-            os.system('cls')
+            clear()
             num = input("Digite números separados por vírgulas (Ex.: 10,20,30): ")
             # Separa o numeros pela virgulas
             lista_numeros = num.split(',')
@@ -147,7 +151,7 @@ def menu():
             menu()
             # Proporção de imagem
         elif opc_calc_tools == '3':
-            os.system('cls')
+            clear()
             print ('\nMe diga a largura')
             h = int(input('\n> '))
             print ('\nMe diga a altura')
@@ -172,7 +176,7 @@ def menu():
             input()
             menu()
         elif opc_calc_tools == '4':
-            os.system('cls')
+            clear()
             print ('\nMe diga um número primo')
             primo = int(input('\n> '))
 
