@@ -141,7 +141,7 @@ def menu():
             
     # Calc Tools / Ferramentas de cálculos
     elif opcao_menu == '2':
-        print ('\n(1) Porcentagem\n(2) Média\n(3) Proporção de imagem\n(4) Números primos\n(5) Números aleatórios\n(6) Potenciação')
+        print ('\n(1) Porcentagem\n(2) Média\n(3) Proporção de imagem\n(4) Números primos\n(5) Números aleatórios\n(6) Potenciação\n(7) Velocidade média\n(8) Equação do primeiro grau\n(9) Equação do segundo grau')
         opc_calc_tools = input('\n> ')
         if not opc_calc_tools:
             menu()
@@ -267,6 +267,69 @@ def menu():
                 menu()
             ptcbase_exp = (ptcbase ** ptcexp)
             print (f"\n\nA resposta é: {ptcbase_exp}")
+        # Average speed, time, distance / Velocidade, tempo e distância média 
+        elif opc_calc_tools == '7':
+            grandeza = input("Você quer descobrir qual grandeza?:\n\n(1) Velocidade\n\n(2) Tempo\n\n(3) Distância\n\n> ")
+            if not grandeza:
+                menu()
+            elif grandeza == '1':
+                clear()
+                velocidade_distancia = float(input("Qual o tempo em segundos?\n\n-> "))
+                tempo_distancia = float(input("Qual a distancia em metros?\n\n-> "))
+                t_resultado_m = (velocidade_distancia / tempo_distancia)
+                t_resultado_km = (t_resultado_m * 3.6)
+                print ("A resposta em m/s é:", t_resultado_m,"\nAgora em Km/h é:", t_resultado_km)
+                input("Pressione qualquer tecla para continuar...")
+                menu()
+            elif grandeza == '2':
+                clear()
+                velocidade_tempo = float(input("Qual a velocidade em m/s?\n\n-> "))
+                distancia_tempo = float(input("Qual a distancia em metros?\n\n-> "))
+                t_resultado_segundos = (distancia_tempo / velocidade_tempo)
+                t_resultado_minutos = (t_resultado_segundos / 60)
+                t_resultado_horas = (t_resultado_segundos / 3600)
+                print (f"A resposta em segundos é: {t_resultado_segundos}\nEm minutos é: {t_resultado_minutos}\nAgora em horas é: {t_resultado_horas}")
+                input("Pressione qualquer tecla para continuar...")
+                menu()
+            elif grandeza == '3':
+                clear()
+                velocidade_distancia = float(input("Qual a velocidade em m/s?\n\n-> "))
+                tempo_distancia = float(input("Qual o tempo em segundos?\n\n-> "))
+                t_resultado_m = (velocidade_distancia * tempo_distancia)
+                t_resultado_km = (t_resultado_m / 1000)
+                print ("A resposta em metros é:", t_resultado_m,"\nAgora em km é:", t_resultado_km)
+                input("Pressione qualquer tecla para continuar...")
+                menu()
+        # Linear equation / equação linear
+        elif opc_calc_tools == '8':
+            co_a = float(input("digite o coeficiente A: "))
+            co_b = float(input("digite o coeficiente B: "))
+            r = (-co_b) / co_a
+            print (f"A raiz é: {r}")
+            input("Pressione qualquer tecla para continuar...")
+            menu()
+        # Quadratic equation / Equação quadrática
+        elif opc_calc_tools == '9':
+            co_a = float(input("digite o coeficiente A: "))
+            co_b = float(input("digite o coeficiente B: "))
+            co_c = float(input("digite o coeficiente C: "))
+
+            delta = (co_b ** 2) - (4 * co_a * co_c)
+            if delta < 0:
+                print ("\n\nA equação não tem raizes reais")
+                input("Pressione qualquer tecla para continuar...")
+                menu()
+            elif delta == 0:
+                x0 = (-co_b) / (2 * co_a)
+                print (f'\n\nA única raiz é essa: {x0}')
+                input("Pressione qualquer tecla para continuar...")
+                menu()
+        else:
+            x1 = ((-co_b) + math.sqrt(delta)) / (2 * co_a)
+            x2 = ((-co_b) - math.sqrt(delta)) / (2 * co_a)
+            print (f"\n\nPrimeira raiz é {x1} e a Segunda raiz é {x2}")
+            input("Pressione qualquer tecla para continuar...")
+            menu()
     else:
         print("Opção errada")
         input("Pressione qualquer tecla para continuar...")
