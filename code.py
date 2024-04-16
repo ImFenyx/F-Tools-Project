@@ -330,8 +330,6 @@ def menu():
             print (f"\n\nPrimeira raiz é {x1} e a Segunda raiz é {x2}")
             input("Pressione qualquer tecla para continuar...")
             menu()
-
-
     else:
         print("Opção errada")
         input("Pressione qualquer tecla para continuar...")
