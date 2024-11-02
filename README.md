@@ -6,8 +6,19 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/ImFenyx/F-Tools-Project/total?style=for-the-badge&color=purple)
 
 ## Preview:
-![image](https://github.com/ImFenyx/F-Tools-Project/assets/103691581/bc103a81-8242-4ff7-a7dc-f49c1a4685ea)
+<table>
+  <tr>
+    <td>
+      
+<img align="left" src="https://github.com/ImFenyx/F-Tools-Project/assets/103691581/bc103a81-8242-4ff7-a7dc-f49c1a4685ea"></img>
+  </td>
+  <td>
+<img align="right" src="https://github.com/user-attachments/assets/ab670672-c935-4555-a424-a2d6b1ed4af6"></img> 
+</td>
 
+
+</tr>
+</table>
 
 > Programa feito para ferramentas úteis do dia-a-dia como manipulação de textos, cálculos, etc.
 
