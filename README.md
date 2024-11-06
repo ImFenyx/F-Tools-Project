@@ -26,6 +26,7 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
 
+- [ ] Refatorar/Reformular o código
 - [ ] Ferramentas de conversão de unidades
 - [ ] Ferramentas de manipulação de cores
 - [ ] Ferramentas de randomização
