@@ -51,7 +51,15 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       <a href="#" title="defina o título do link">
         <img src="https://avatars.githubusercontent.com/u/103691581?v=4" width="100px;" alt="Foto do ImFenyx no GitHub"/><br>
         <sub>
-          <b>ImFenyx</b>
+          <b>ImFenyx (Iago Anjos)</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#" title="">
+        <img src="https://avatars.githubusercontent.com/u/71525241?v=4" width="100px;" alt="Foto de XvierDev no GitHub"><br>
+        <sub>
+          <b>Xvierdev (Wesley Xavier)</b>
         </sub>
       </a>
     </td>
