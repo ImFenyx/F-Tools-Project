@@ -1,7 +1,9 @@
 #coding=utf-8
 
 """
-TODO: Migrate Aleph-0 features to F-Tools / Migrar funções do Aleph-0 para F-Tools
+TODO: 
+- Optimize code performance and readability/ease of maintenance by modularizing functions in other files
+- Improve the code's CLI.
 """
 # imports
 import time
