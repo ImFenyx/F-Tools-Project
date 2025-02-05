@@ -30,14 +30,14 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Ferramentas de conversão de unidades
 - [ ] Ferramentas de manipulação de cores
 - [ ] Ferramentas de randomização
-- [ ] Implementar GUI (GTK 3/4 ou QT 4/5)
+- [ ] Implementar GUI (QT)
 
 ## 💻 Requisitos Mínimos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Python 3
-- Windows ou Linux
+- Windows 10 ou Linux
 > [!note]
 > *Requisitos imprecisos por **falta de testes***
 
